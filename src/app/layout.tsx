@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SmoothScroll from "@/components/SmoothScroll";
 import { Newsreader, Public_Sans } from "next/font/google";
 import "./globals.css";
 
@@ -36,11 +37,13 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar />
-          <main className="flex-grow pt-20">
-            {children}
-          </main>
-          <Footer />
+          <SmoothScroll>
+            <Navbar />
+            <main className="flex-grow pt-20">
+              {children}
+            </main>
+            <Footer />
+          </SmoothScroll>
         </ThemeProvider>
       </body>
     </html>
