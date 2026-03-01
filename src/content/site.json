@@ -1,0 +1,25 @@
+{
+  "name": "Victoria Eye Care",
+  "tagline": "Expert Ophthalmology in Victoria, BC",
+  "description": "Cataract surgery in Victoria, BC. Dr. Hamza Khan, M.D., is committed to patient safety, and providing quality ophthalmology surgery, medical care, and research.",
+  "address": {
+    "suite": "203",
+    "street": "1581 Hillside Avenue",
+    "city": "Victoria",
+    "province": "BC",
+    "postalCode": "V8T 2C1",
+    "landmark": "Entrance is beside the McDonald's Drive-Thru"
+  },
+  "phone": "250.382.3937",
+  "fax": "250.800.2453",
+  "officeHours": {
+    "weekdays": "Monday – Thursday: 8:00 AM – 4:30 PM",
+    "friday": "Friday: 8:00 AM – 12:00 PM (or by appointment)",
+    "holidays": "Closed on Statutory Holidays"
+  },
+  "phoneHours": {
+    "weekdays": "Monday – Thursday: 9:00 AM – 12:00 PM, 1:00 PM – 3:00 PM",
+    "friday": "Friday: 9:00 AM – 12:00 PM"
+  },
+  "staff": ["Jessica", "Laura", "Taylor", "Rachel"]
+}

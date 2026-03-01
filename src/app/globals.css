@@ -1,26 +1,95 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  --font-sans: var(--font-public-sans), "Public Sans", system-ui, sans-serif;
+  --font-serif: var(--font-newsreader), "Newsreader", Georgia, serif;
 
-@theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-warmth: var(--warmth);
+
+  /* Strict Gallery Wall Overrides */
+  --radius-xs: 0px;
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+  --radius-2xl: 0px;
+  --radius-3xl: 0px;
+  --radius-full: 9999px;
+  /* Only for tight architectural pills like the theme toggler */
 }
 
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* clinical warmth aesthetic */
+    --background: #F8F7F4;
+    --foreground: #0A0C10;
+    --surface: #FFFFFF;
+    --surface-hover: #F2F1ED;
+    --border: #E2DFD8;
+    --accent: #2C3E50;
+    --accent-foreground: #FFFFFF;
+    --warmth: #9B7E6B;
+  }
+
+  /* We still retain a dark mode variant, but keeping it severe */
+  .dark {
+    --background: #0A0C10;
+    --foreground: #F8F7F4;
+    --surface: #12151A;
+    --surface-hover: #1A1F26;
+    --border: #2C3E50;
+    --accent: #F8F7F4;
+    --accent-foreground: #0A0C10;
+    --warmth: #B39987;
+  }
+
+  * {
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    line-height: 1.4;
+  }
+
+  /* No shadows globally to enforce the aesthetic */
+  * {
+    box-shadow: none !important;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Glassmorphism Utilities are being PURGED, leaving only architectural hairlines */
+@layer utilities {
+  .architectural-header {
+    background: var(--background);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .architectural-panel {
+    background: var(--surface);
+    border-left: 1px solid var(--border);
+  }
+}
+
+/* Theme Transition Fixes */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
 }

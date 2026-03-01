@@ -1,0 +1,206 @@
+[
+    {
+        "slug": "cataract",
+        "title": "Cataract",
+        "shortDescription": "A clouding of the natural lens of the eye that causes reduced vision.",
+        "icon": "eye",
+        "sections": [
+            {
+                "heading": "What is a Cataract?",
+                "content": "A cataract is a clouding of the natural lens of the eye. The natural lens is a fine, transparent object suspended behind the pupil, black circular opening of the eye, and is normally clear. When light enters the eye it passes through the pupil and the lens. The lens focuses the light rays onto the retina at the back of the eye which in turn sends a message to the brain. However, when cataracts develop, the light is distorted and cannot focus clearly on the retina causing reduced vision."
+            },
+            {
+                "heading": "What Causes a Cataract?",
+                "content": "Almost everyone who lives a long life will develop cataracts. The most common cause of a cataract is natural age-related changes, however other causes are trauma, inflammation, radiation damage, metabolic and nutritional defects, or birth defects."
+            },
+            {
+                "heading": "What are the Symptoms of Cataract?",
+                "content": "Some common symptoms of a developing cataract are: objects appear yellowed, haziness, appearance of dark spots or shadows, increased need for more light to see clearly, halos or coloured rings around lights, increased nearsightedness, and double vision."
+            },
+            {
+                "heading": "How Fast Does a Cataract Progress?",
+                "content": "This varies from person to person. Some cataracts may develop slowly over the years while others may progress rapidly within a few months. A cataract does not spread from one eye to another but will usually develop in both eyes at some time."
+            }
+        ]
+    },
+    {
+        "slug": "glaucoma",
+        "title": "Glaucoma",
+        "shortDescription": "A group of eye diseases that damage the optic nerve, often linked to elevated eye pressure.",
+        "icon": "activity",
+        "sections": [
+            {
+                "heading": "What is Glaucoma?",
+                "content": "Glaucoma is a group of eye diseases that gradually cause damage to the optic nerve. It is often associated with elevated intraocular pressure.  Early detection and treatment are critical to prevent vision loss."
+            },
+            {
+                "heading": "Monitoring and Diagnosis",
+                "content": "Each of these evaluation tools is an important way to monitor your vision to help ensure that glaucoma does not rob you of your sight. Some of these tests will not be necessary for everyone. Your ophthalmologist or optometrist will discuss which tests are best for you. Some tests may need to be repeated on a regular basis to monitor any changes in your vision caused by glaucoma."
+            }
+        ]
+    },
+    {
+        "slug": "macular-degeneration",
+        "title": "Macular Degeneration",
+        "shortDescription": "Age-related deterioration of the macula causing loss of central vision.",
+        "icon": "scan",
+        "sections": [
+            {
+                "heading": "What is Macular Degeneration?",
+                "content": "Macular degeneration, also known as Age Related Macular Degeneration (AMD) is the loss of the central field of vision, or what you see directly in front of you. This is caused by deterioration of the macula, a sensitive part of the retina which is made up of millions of light sensing cells which gather the images. When the macula is damaged, the central vision becomes unclear, blurry or fuzzy."
+            },
+            {
+                "heading": "Types of AMD",
+                "content": "The two types of Macular Degeneration are: Dry AMD and Wet AMD. Dry macular degeneration is the more common form and less severe of the two types. In dry macular degeneration, the retinal cells in the macula begin to degenerate or break down resulting in the thinning of the macula. Progression of this type is slow and may take years to become severe. Some symptoms of dry macular degeneration are fuzzy central vision, need for more light to read, poor contrast, distorted images and development of a blind spot in the centre of vision. Wet macular degeneration is characterized by the abnormal growth of blood vessels under the retina at the back of the eye. These blood vessels are very porous, leaking blood and fluid under the macula. Symptoms are the same as dry macular degeneration however, the onset is rapid."
+            },
+            {
+                "heading": "Causes of Macular Degeneration",
+                "content": "The exact reason for macular degeneration is not known, however the risk of the disease increases with age and is most often found in people over 65. Other factors that can cause macular degeneration are: race (Caucasians are more prone to this disease), family history, an unhealthy diet and smoking. Cardiovascular disease and high cholesterol levels both increase the risk of macular degeneration."
+            }
+        ]
+    },
+    {
+        "slug": "dry-eye",
+        "title": "Dry Eye & Lid Margin Disease",
+        "shortDescription": "Chronic inflammation of the eyelids causing burning, dryness, and irritation.",
+        "icon": "droplets",
+        "sections": [
+            {
+                "heading": "What is Lid Margin Disease?",
+                "content": "Lid margin disease or blepharitis is a common and frequently chronic, ongoing inflammation of the eyelids. The hallmark symptoms are burning, especially in the morning; thick, red eyelids; eyelids matted together in the morning and red eyes. This condition frequently occurs in people who tend to have oily skin, dandruff, rosacea or dry eyes."
+            },
+            {
+                "heading": "Causes",
+                "content": "Blepharitis runs in families. It is sometimes caused by Staph or by other microbes and may be related to some skin conditions, like rosacea. The oil glands in the eyelids are abnormal and become plugged and produce an abnormal type of oil. The tears become acidic, and the tear film can break down quickly, causing dryness and burning."
+            },
+            {
+                "heading": "Treatment",
+                "content": "Lid margin and Dry Eye cannot be cured. It may be controlled with a few simple, daily hygienic measures. Once or twice per day, place a warm, wet washcloth over your closed eyelids for a couple minutes. Rewet it as it cools. With a wet Q-tip, gently scrub the base of the lashes for about 15 seconds per lid. Medications alone are not sufficient – the application of warmth and cleansing of the lashes daily is key. New methods of treatment include micro-blepharoexfoliation (BlephX), Meibomian gland heating and expression (Mibo) as well as Intense Pulsed Light (IPL)."
+            }
+        ]
+    },
+    {
+        "slug": "chalazion",
+        "title": "Chalazion",
+        "shortDescription": "A swelling or lump in the eyelid caused by a blocked oil gland.",
+        "icon": "circle-dot",
+        "sections": [
+            {
+                "heading": "What is a Chalazion?",
+                "content": "A chalazion is a swelling or lump in the eyelid, caused by inflammation of one of the small oil-producing glands located in the upper and lower eyelids. When a chalazion is of sudden onset and acutely inflamed, it is called a stye. Sometimes a chalazion can cause the entire eyelid to swell suddenly, but usually there is a particular tender point."
+            },
+            {
+                "heading": "Treatment",
+                "content": "When a chalazion is small and without symptoms, it may disappear on its own. If the chalazion is large, it may cause blurred vision by pressing on the cornea. Chalazions are treated with warm compresses, steroid injections to reduce inflammation, surgery to drain large chalazions, or newer treatments such as Intense Pulsed Light (IPL). Chalazions usually respond well to treatment, although some people are prone to recurrences."
+            }
+        ]
+    },
+    {
+        "slug": "epiretinal-membrane",
+        "title": "Epiretinal Membrane",
+        "shortDescription": "Scar tissue on the macula that causes blurred or distorted central vision.",
+        "icon": "layers",
+        "sections": [
+            {
+                "heading": "What is an Epiretinal Membrane?",
+                "content": "The retina is a layer of light-sensing cells lining the back of your eye. The macula is the small area at the center of your retina that allows you to see fine details. As you age, the clear gel-like substance that fills the middle of your eye begins to shrink and pull away from the retina. In some cases, a thin scar tissue or membrane can grow on the surface of the macula. When wrinkles, creases, or bulges form on the macula due to this scar tissue, this is known as an epiretinal membrane."
+            },
+            {
+                "heading": "Symptoms",
+                "content": "Symptoms, which can be mild or severe and affect one or both eyes, may include: blurred detail vision, distorted or wavy vision, gray or cloudy area in central vision, blind spot in central vision, and double vision in the affected eye."
+            },
+            {
+                "heading": "Treatment",
+                "content": "If your symptoms are mild, no treatment may be necessary. Updating your eyeglass prescription or wearing bifocals may improve your vision sufficiently. If you have more severe symptoms, your ophthalmologist may recommend vitrectomy surgery to peel and remove the abnormal scar tissue. During this outpatient procedure, tiny instruments are used to remove the wrinkled tissue. Vision often improves."
+            }
+        ]
+    },
+    {
+        "slug": "floaters-and-flashers",
+        "title": "Floaters & Flashers",
+        "shortDescription": "Small specks or threads in your vision, sometimes accompanied by flashes of light.",
+        "icon": "sparkles",
+        "sections": [
+            {
+                "heading": "What are Floaters?",
+                "content": "Small specks, threads or clouds moving in your vision are known as floaters. In most cases, floaters are part of the natural aging process. As we get older, the vitreous (the clear, gel-like substance that fills the inside of the eye) tends to shrink and detach from the retina, forming clumps within the eye. What you see are the shadows these clumps cast on the retina."
+            },
+            {
+                "heading": "What are Flashers?",
+                "content": "The appearance of flashing lights comes from the traction of the vitreous gel on the retina at the time of vitreous separation. Flashes look like lightning streaks."
+            },
+            {
+                "heading": "When to Seek Help",
+                "content": "Floaters and flashes are sometimes associated with retinal tears. When the vitreous shrinks, it can pull on the retina and cause a tear. A torn retina is a serious problem that can lead to a retinal detachment and blindness. If new floaters appear suddenly or you see sudden flashes of light, see your eye doctor promptly."
+            }
+        ]
+    },
+    {
+        "slug": "macular-hole",
+        "title": "Macular Hole",
+        "shortDescription": "A small round opening in the macula causing a blind spot in central vision.",
+        "icon": "target",
+        "sections": [
+            {
+                "heading": "What is a Macular Hole?",
+                "content": "The macula is the part of the retina responsible for acute central vision. A macular hole is a small, round opening in the macula. The hole causes a blind spot or blurred area directly in the center of your vision. Most macular holes occur in the elderly."
+            },
+            {
+                "heading": "Treatment",
+                "content": "Macular holes that are just starting to form may be simply observed. Fifty percent of these holes resolve spontaneously. Holes that are more than minimal usually should have surgery to prevent severe vision loss. Vitrectomy surgery removes the vitreous gel and scar tissue, and the eye is filled with a special gas bubble to push against the macula and close the hole. The patient must maintain a face-down position for one to two weeks."
+            }
+        ]
+    },
+    {
+        "slug": "corneal-abrasion",
+        "title": "Corneal Abrasion",
+        "shortDescription": "Scratches or cuts to the clear outer surface of the eye.",
+        "icon": "shield-alert",
+        "sections": [
+            {
+                "heading": "What is a Corneal Abrasion?",
+                "content": "The cornea is the clear dome in the front of the eye covering the iris and pupil. Injuries to the epithelium, such as scratches, cuts, or scrapes, are known as corneal abrasions. Usually caused by fingernail scratches, makeup brushes, plants, or rubbing of the eyes."
+            },
+            {
+                "heading": "Symptoms and Treatment",
+                "content": "Symptoms include pain, foreign body sensation, tearing, redness and blurred vision. Treatment includes antibiotic drops or ointment to prevent infection. Minor abrasions usually heal within a day or two, while larger abrasions take about a week. Corneal abrasions can recur spontaneously, even months later."
+            }
+        ]
+    },
+    {
+        "slug": "corneal-ulcers",
+        "title": "Corneal Ulcers",
+        "shortDescription": "Open sores on the cornea, often caused by infection or contact lens wear.",
+        "icon": "alert-circle",
+        "sections": [
+            {
+                "heading": "What are Corneal Ulcers?",
+                "content": "Corneal ulcers can form due to trauma to the cornea, eyelid disease, severe dry eye, fungus, Herpes simplex viral infections, and other causes. The most common cause is from contact lens wear. Bacterial ulcers are the most painful type and can cause permanent vision loss if untreated."
+            },
+            {
+                "heading": "Symptoms",
+                "content": "The symptoms of corneal ulcers may include: pain, redness, blurred vision, tearing, and sensitivity to light. Report a painful, red eye to your doctor promptly!"
+            },
+            {
+                "heading": "Treatment",
+                "content": "Treatment depends on the cause and usually includes steroid eye drops, anti-inflammatory drops, or antibiotics. Often the antibiotic drops must be compounded in a special pharmacy. In some cases, drops must be administered every hour around the clock. In rare cases, a corneal transplant may be necessary."
+            }
+        ]
+    },
+    {
+        "slug": "detached-retina",
+        "title": "Detached & Torn Retina",
+        "shortDescription": "A serious condition where the retina separates from the back of the eye.",
+        "icon": "alert-triangle",
+        "sections": [
+            {
+                "heading": "What is a Retinal Detachment?",
+                "content": "A retinal detachment is a very serious problem that usually causes blindness unless treated. The appearance of flashing lights, floating objects, or a gray curtain moving across the field of vision are all indications of a possible retinal detachment. If any of these occur, see an ophthalmologist right away."
+            },
+            {
+                "heading": "Treatment",
+                "content": "Laser surgery or cryotherapy (freezing) are often used to seal retinal tears and prevent detachment. If the retina is detached, there are three surgical repair options: Pneumatic retinopexy (gas bubble injection), scleral buckle procedure, or vitrectomy surgery. These procedures are done in an operating room under sterile conditions."
+            }
+        ]
+    }
+]
