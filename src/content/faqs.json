@@ -1,0 +1,34 @@
+[
+    {
+        "question": "What is a Cataract?",
+        "answer": "A cataract is a clouding of the natural lens of the eye. When cataracts develop, light is distorted and cannot focus clearly on the retina, causing reduced vision. The most common cause is natural age-related changes."
+    },
+    {
+        "question": "What are the symptoms of a Cataract?",
+        "answer": "Common symptoms include: objects appearing yellowed, haziness, dark spots or shadows, increased need for more light, halos or coloured rings around lights, increased nearsightedness, and double vision."
+    },
+    {
+        "question": "How fast does a Cataract progress?",
+        "answer": "This varies from person to person. Some cataracts may develop slowly over years while others may progress rapidly within a few months. A cataract does not spread from one eye to another but will usually develop in both eyes at some time."
+    },
+    {
+        "question": "What should I bring to my first visit?",
+        "answer": "Please bring your CareCard/BC Services Card, completed New Patient Registration Form, your current prescription glasses, and a current list of medications and supplements."
+    },
+    {
+        "question": "Can I drive after my consultation?",
+        "answer": "No. You cannot drive after your consultation appointment because dilating drops will be used. Please arrange for transportation. On average, the dilation effect lasts for 4-6 hours."
+    },
+    {
+        "question": "Are office visits covered by MSP?",
+        "answer": "Yes. Office visits and standard tests are insured services under BC's MSP coverage. Some specialized services are uninsured and optional — you will be advised at the time of testing."
+    },
+    {
+        "question": "What are the office hours?",
+        "answer": "Monday through Thursday: 8am to 4:30pm. Friday: 8am to noon (or by appointment). Closed on Statutory Holidays."
+    },
+    {
+        "question": "Do I need a referral?",
+        "answer": "Yes. As a specialist practice, you will need a referral from your family doctor or optometrist to book an appointment with our physicians."
+    }
+]

@@ -1,0 +1,48 @@
+{
+    "firstVisit": {
+        "title": "Your First Visit",
+        "steps": [
+            "Fill out a New Patient Registration Form (can be completed prior to appointment)",
+            "Undergo eye testing"
+        ],
+        "description": "During this visit, one of our experienced technicians will perform testing on your eye(s). The technician will gather information about you, and perform diagnostic tests which are necessary for a detailed evaluation of your eye condition. The physician requires this information to assess your case and will have it available at your consultation appointment with them. The consultation appointment will be booked for a different day.",
+        "duration": "Approximately 30 minutes",
+        "notes": [
+            "Dilating drops will NOT be used at this appointment, so you may drive yourself.",
+            "If you wear soft contact lenses, please remove them at least 24 hours before your appointment.",
+            "If you wear hard or rigid contact lenses, please remove them at least 1 week prior to your appointment."
+        ],
+        "whatToBring": [
+            "CareCard/BC Services Card",
+            "Completed New Patient Registration Form",
+            "Your current prescription glasses",
+            "Current list of medications and supplements"
+        ]
+    },
+    "consultation": {
+        "title": "Your First Consultation",
+        "steps": [
+            "Undergo eye testing and have dilating drops put in",
+            "Meet with the physician for your consultation"
+        ],
+        "description": "To begin your consultation appointment, one of our technicians will test your vision and dilate your eyes with dilating drops. The drops take approximately 15-20 minutes to fully dilate your eyes. During this time, you will be seated in our waiting room where we play educational videos on the nature of your eye condition. Once your eyes are fully dilated, you will be brought to an examination room where the physician will perform a complete eye examination and discuss their findings with you.",
+        "duration": "At least 1 hour",
+        "notes": [
+            "You may NOT drive yourself from this appointment, as dilating drops will be used.",
+            "We encourage you to bring a family member or friend with you for the discussion portion.",
+            "If you can't have someone accompany you, taking a bus or taxi is fine.",
+            "On average, the dilation effect lasts for 4-6 hours."
+        ]
+    },
+    "costs": {
+        "title": "Costs",
+        "description": "Office visits and standard tests are insured services under BC's MSP coverage. Uninsured services — that you are responsible to pay for yourself — are optional. You will be advised at the time of testing. Fees are payable at the time they are assessed.",
+        "uninsuredExamples": [
+            "Letters and notes",
+            "Copies of medical records",
+            "Specialized eye testing such as Corneal Topography or Refractive Evaluation",
+            "Vector analysis of Astigmatism",
+            "Dry Eye Clinic services and procedures"
+        ]
+    }
+}
