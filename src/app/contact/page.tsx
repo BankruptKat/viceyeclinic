@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import ContactForm from '@/components/ContactForm';
+import { LayoutContainer } from "@/components/layout-container";
 import { Mail, MapPin, Phone } from 'lucide-react';
 import siteData from '@/content/site.json';
 
@@ -10,12 +11,11 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
     return (
-        <div className="py-24 md:py-32">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-                <div className="text-center max-w-3xl mx-auto mb-16 md:mb-24">
-                    <h1 className="text-5xl md:text-6xl font-bold tracking-tight mb-6">Contact Us</h1>
-                    <p className="text-xl text-foreground/60 font-medium">
+        <div className="py-16 md:py-32">
+            <LayoutContainer>
+                <div className="flex flex-col md:flex-row items-center md:items-end text-center md:text-left justify-between border-b border-border pb-12 md:pb-16 mb-12 md:mb-16 gap-4 md:gap-8">
+                    <h1 className="text-5xl sm:text-6xl md:text-8xl font-serif font-bold tracking-tighter w-full">Contact<br className="hidden md:block" /> Us.</h1>
+                    <p className="text-lg md:text-xl text-foreground/70 font-medium max-w-md leading-relaxed mx-auto md:mx-0 w-full">
                         We&apos;re here to provide clarity. Send us a message or call to schedule your consultation.
                     </p>
                 </div>
@@ -74,7 +74,7 @@ export default function ContactPage() {
                     </div>
 
                 </div>
-            </div>
+            </LayoutContainer>
         </div>
     );
 }

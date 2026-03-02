@@ -19,7 +19,7 @@ export function LayoutContainer({
         <div
             className={cn(
                 "mx-auto w-full max-w-[1440px]",
-                !bleed && "px-6 md:px-12 lg:px-24", // Extreme gutters for the Gallery Wall effect
+                !bleed && "px-4 sm:px-6 md:px-12 lg:px-24", // Strict 16px mobile gutters up to extreme Gallery Wall grids
                 className
             )}
             {...props}

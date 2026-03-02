@@ -12,11 +12,11 @@ export default function DoctorsPage() {
     const doctors = doctorsData;
 
     return (
-        <div className="py-24 md:py-32">
+        <div className="py-16 md:py-32">
             <LayoutContainer>
-                <div className="flex flex-col md:flex-row items-end justify-between border-b border-border pb-16 mb-16 gap-8">
-                    <h1 className="text-6xl md:text-8xl font-serif font-bold tracking-tighter">Our<br />Specialists.</h1>
-                    <p className="text-xl text-foreground/70 font-medium max-w-md leading-relaxed">
+                <div className="flex flex-col md:flex-row items-center md:items-end text-center md:text-left justify-between border-b border-border pb-12 md:pb-16 mb-12 md:mb-16 gap-4 md:gap-8">
+                    <h1 className="text-5xl sm:text-6xl md:text-8xl font-serif font-bold tracking-tighter w-full">Our<br className="hidden md:block" /> Specialists.</h1>
+                    <p className="text-lg md:text-xl text-foreground/70 font-medium max-w-md leading-relaxed mx-auto md:mx-0 w-full">
                         A world-class team dedicated to preserving and enhancing your vision through precision care.
                     </p>
                 </div>

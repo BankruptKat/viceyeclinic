@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import FAQ from '@/components/FAQ';
+import { LayoutContainer } from "@/components/layout-container";
 
 export const metadata: Metadata = {
     title: 'Frequently Asked Questions | Victoria Eye Care',
@@ -7,19 +8,20 @@ export const metadata: Metadata = {
 };
 
 export default function FAQPage() {
-    // Schema.org JSON-LD for FAQPage (SEO) imported previously
     return (
-        <div className="py-24 md:py-32">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="text-center max-w-3xl mx-auto mb-16 md:mb-24">
-                    <h1 className="text-5xl md:text-6xl font-bold tracking-tight mb-6">Patient FAQs</h1>
-                    <p className="text-xl text-foreground/60 font-medium">
-                        Everything you need to know to prepare for your visit.
+        <div className="py-16 md:py-32">
+            <LayoutContainer>
+                <div className="flex flex-col md:flex-row items-center md:items-end text-center md:text-left justify-between border-b border-border pb-12 md:pb-16 mb-12 md:mb-16 gap-4 md:gap-8">
+                    <h1 className="text-5xl sm:text-6xl md:text-8xl font-serif font-bold tracking-tighter w-full">Patient<br className="hidden md:block" /> FAQs.</h1>
+                    <p className="text-lg md:text-xl text-foreground/70 font-medium max-w-md leading-relaxed mx-auto md:mx-0 w-full">
+                        Clear architectural answers to help you prepare for your clinical visitation.
                     </p>
                 </div>
 
-                <FAQ />
-            </div>
+                <div className="max-w-4xl mx-auto">
+                    <FAQ />
+                </div>
+            </LayoutContainer>
         </div>
     );
 }

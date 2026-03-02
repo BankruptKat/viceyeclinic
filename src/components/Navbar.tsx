@@ -52,10 +52,10 @@ export default function Navbar() {
 
                         {/* Mobile menu button */}
                         <div className="flex items-center gap-4 md:hidden">
-                            <AnimatedThemeToggler className="flex items-center justify-center w-8 h-8 border border-border bg-surface hover:bg-surface-hover transition-colors" />
+                            <AnimatedThemeToggler className="flex items-center justify-center w-11 h-11 border border-border bg-surface hover:bg-surface-hover transition-colors" />
                             <button
                                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                                className="p-2 text-foreground focus:outline-none border border-border"
+                                className="flex items-center justify-center w-11 h-11 text-foreground focus:outline-none border border-border"
                                 aria-expanded={isMobileMenuOpen}
                             >
                                 <span className="sr-only">Open main menu</span>
@@ -84,28 +84,28 @@ export default function Navbar() {
                             <Link
                                 href="/conditions"
                                 onClick={() => setIsMobileMenuOpen(false)}
-                                className="text-2xl font-semibold text-foreground"
+                                className="text-2xl font-semibold text-foreground py-2"
                             >
                                 Conditions
                             </Link>
                             <Link
                                 href="/doctors"
                                 onClick={() => setIsMobileMenuOpen(false)}
-                                className="text-2xl font-semibold text-foreground"
+                                className="text-2xl font-semibold text-foreground py-2"
                             >
                                 Our Specialists
                             </Link>
                             <Link
                                 href="/patient-info"
                                 onClick={() => setIsMobileMenuOpen(false)}
-                                className="text-2xl font-semibold text-foreground"
+                                className="text-2xl font-semibold text-foreground py-2"
                             >
                                 Patient Info
                             </Link>
                             <Link
                                 href="/faqs"
                                 onClick={() => setIsMobileMenuOpen(false)}
-                                className="text-2xl font-semibold text-foreground"
+                                className="text-2xl font-semibold text-foreground py-2"
                             >
                                 FAQs
                             </Link>

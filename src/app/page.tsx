@@ -23,8 +23,8 @@ export default function Home() {
         Asymmetrical Anti-SaaS Design.
         Flush-left huge serif typography, sharp lines, massive whitespace.
       */}
-      <section className="relative min-h-[90vh] flex flex-col justify-end pt-32 pb-16">
-        <LayoutContainer className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-end">
+      <section className="relative min-h-[85vh] md:min-h-[90vh] flex flex-col justify-end pt-32 pb-12 md:pb-16 flex-grow">
+        <LayoutContainer className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-end">
 
           <div className="lg:col-span-7 pb-8 lg:pb-16 flex flex-col justify-end">
             {/* Invisible Baseline Alignment */}
@@ -33,8 +33,8 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
             >
-              <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-[7.5rem] font-serif font-bold tracking-tighter leading-[0.9] mb-10 text-foreground">
-                Clarity in <br /> every glance.
+              <h1 className="text-5xl sm:text-6xl md:text-8xl lg:text-[7.5rem] font-serif font-bold tracking-tighter leading-[1] md:leading-[0.9] mb-8 md:mb-10 text-foreground">
+                Clarity in <br className="hidden md:block" /> every glance.
               </h1>
 
               <div className="flex flex-col sm:flex-row sm:items-end gap-8 sm:gap-16">
@@ -44,7 +44,7 @@ export default function Home() {
 
                 <Link
                   href="/contact"
-                  className="group inline-flex items-center text-xs font-bold tracking-[0.2em] uppercase pb-2 border-b border-foreground hover:text-warmth hover:border-warmth transition-colors shrink-0"
+                  className="group inline-flex items-center text-xs font-bold tracking-[0.2em] uppercase pb-2 border-b border-foreground hover:text-warmth hover:border-warmth transition-colors shrink-0 py-2 sm:py-0"
                 >
                   Request Consultation
                   <ArrowRight className="ml-3 w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -53,7 +53,7 @@ export default function Home() {
             </motion.div>
           </div>
 
-          <div className="lg:col-span-5 h-[50vh] lg:h-[70vh] relative border border-border bg-surface overflow-hidden group">
+          <div className="lg:col-span-5 h-[40vh] md:h-[50vh] lg:h-[70vh] relative border border-border bg-surface overflow-hidden group">
             <motion.div
               initial={{ scale: 1.05, filter: "blur(10px)" }}
               animate={{ scale: 1, filter: "blur(0px)" }}
@@ -79,7 +79,7 @@ export default function Home() {
         Typographic Grid (1px hairlines)
       */}
       <section className="border-t border-border">
-        <LayoutContainer className="pt-16 pb-24 md:pt-24 md:pb-32">
+        <LayoutContainer className="pt-16 pb-16 md:pt-24 md:pb-32">
           {/* Hairline Grid Concept */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-px bg-border border border-border">
             {[
@@ -88,11 +88,11 @@ export default function Home() {
               { metric: "99%", label: "Satisfaction\nRate" },
               { metric: "04", label: "Leading\nSpecialists" }
             ].map((stat, i) => (
-              <div key={i} className="bg-background p-8 md:p-12 flex flex-col justify-between aspect-square group">
-                <p className="text-xs font-bold tracking-widest uppercase text-foreground/40 whitespace-pre-line leading-relaxed group-hover:text-warmth transition-colors">
+              <div key={i} className="bg-background p-6 lg:p-12 flex flex-col justify-between aspect-square md:aspect-auto md:min-h-[16rem] group">
+                <p className="text-xs font-bold tracking-widest uppercase text-foreground/40 whitespace-pre-line leading-[1.8] group-hover:text-warmth transition-colors">
                   {stat.label}
                 </p>
-                <h4 className="text-5xl md:text-7xl font-serif font-bold tracking-tighter text-foreground group-hover:translate-x-2 transition-transform duration-500 ease-out">
+                <h4 className="text-4xl sm:text-5xl md:text-7xl font-serif font-bold tracking-tighter text-foreground group-hover:translate-x-2 transition-transform duration-500 ease-out">
                   {stat.metric}
                 </h4>
               </div>
@@ -106,12 +106,12 @@ export default function Home() {
         Transitioning to Index Rows
       */}
       <section className="border-t border-border bg-surface">
-        <LayoutContainer className="py-24 md:py-32">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20 lg:mb-32">
-            <div className="lg:col-span-5">
-              <h2 className="text-4xl md:text-6xl font-serif font-bold tracking-tighter mb-6">Our Expertise.</h2>
+        <LayoutContainer className="py-16 md:py-32">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 mb-12 md:mb-20 lg:mb-32">
+            <div className="lg:col-span-5 text-center md:text-left">
+              <h2 className="text-3xl md:text-6xl font-serif font-bold tracking-tighter mb-4 md:mb-6">Our Expertise.</h2>
             </div>
-            <div className="lg:col-span-5 lg:col-start-7 flex flex-col items-start justify-end">
+            <div className="lg:col-span-5 lg:col-start-7 flex flex-col items-center text-center md:items-start md:text-left justify-end">
               <p className="text-lg text-foreground/70 leading-relaxed font-medium mb-8">
                 Comprehensive treatment plans for a wide range of ocular conditions, utilizing the most advanced diagnostic tools available.
               </p>
@@ -137,10 +137,10 @@ export default function Home() {
         DOCTORS SECTION
       */}
       <section className="border-t border-border">
-        <LayoutContainer className="py-24 md:py-32">
+        <LayoutContainer className="py-16 md:py-32">
 
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 lg:mb-32 gap-8">
-            <h2 className="text-4xl md:text-6xl font-serif font-bold tracking-tighter max-w-xl">
+          <div className="flex flex-col md:flex-row items-center md:items-end text-center md:text-left justify-between mb-12 md:mb-20 lg:mb-32 gap-6 md:gap-8">
+            <h2 className="text-3xl md:text-6xl font-serif font-bold tracking-tighter max-w-xl">
               World-Class Specialists.
             </h2>
             <Link
@@ -167,10 +167,10 @@ export default function Home() {
         FAQ SECTION
       */}
       <section className="border-t border-border bg-surface">
-        <LayoutContainer className="py-24 md:py-32">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-            <div className="lg:col-span-5">
-              <h2 className="text-4xl md:text-6xl font-serif font-bold tracking-tighter mb-6">Patient Questions.</h2>
+        <LayoutContainer className="py-16 md:py-32">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12">
+            <div className="lg:col-span-5 text-center md:text-left">
+              <h2 className="text-3xl md:text-6xl font-serif font-bold tracking-tighter mb-4 md:mb-6">Patient Questions.</h2>
               <p className="text-lg text-foreground/70 font-medium leading-relaxed">
                 Clear architectural answers to help you prepare for your clinical visitation.
               </p>

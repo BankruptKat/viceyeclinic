@@ -38,12 +38,12 @@ export function ConditionCard({ condition, index }: { condition: any; index: num
                         </span>
                     </div>
 
-                    <div className="lg:col-span-6 opacity-100 lg:opacity-0 group-hover:opacity-100 lg:-translate-x-8 group-hover:translate-x-0 transition-all duration-700 ease-[0.16,1,0.3,1] flex items-center justify-between">
+                    <div className="lg:col-span-6 opacity-100 lg:opacity-0 group-hover:opacity-100 lg:-translate-x-8 group-hover:translate-x-0 transition-all duration-700 ease-[0.16,1,0.3,1] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 sm:gap-0 mt-4 lg:mt-0">
                         <p className="text-sm font-medium leading-relaxed text-foreground/70 max-w-md">
                             {condition.shortDescription}
                         </p>
-                        <span className="text-xs font-bold tracking-[0.2em] uppercase text-foreground/30 group-hover:text-warmth transition-colors">
-                            Explore
+                        <span className="inline-flex items-center text-xs font-bold tracking-[0.2em] uppercase text-foreground/50 group-hover:text-warmth transition-colors py-2 lg:py-0">
+                            Explore <span className="ml-2 block lg:hidden">→</span>
                         </span>
                     </div>
 
