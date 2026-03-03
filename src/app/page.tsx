@@ -23,10 +23,10 @@ export default function Home() {
         Asymmetrical Anti-SaaS Design.
         Flush-left huge serif typography, sharp lines, massive whitespace.
       */}
-      <section className="relative min-h-[85vh] md:min-h-[90vh] flex flex-col justify-end pt-32 pb-12 md:pb-16 flex-grow">
-        <LayoutContainer className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-end">
+      <section className="relative min-h-[85vh] md:min-h-[90vh] flex flex-col justify-start md:justify-end pt-20 md:pt-32 pb-12 md:pb-16 flex-grow">
+        <LayoutContainer className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-16 items-end">
 
-          <div className="lg:col-span-7 pb-8 lg:pb-16 flex flex-col justify-end">
+          <div className="order-2 lg:order-1 lg:col-span-7 pb-8 lg:pb-16 flex flex-col justify-end">
             {/* Invisible Baseline Alignment */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -53,7 +53,7 @@ export default function Home() {
             </motion.div>
           </div>
 
-          <div className="lg:col-span-5 h-[40vh] md:h-[50vh] lg:h-[70vh] relative border border-border bg-surface overflow-hidden group">
+          <div className="order-1 lg:order-2 lg:col-span-5 h-[40vh] md:h-[50vh] lg:h-[70vh] relative border border-border bg-surface overflow-hidden group">
             <motion.div
               initial={{ scale: 1.05, filter: "blur(10px)" }}
               animate={{ scale: 1, filter: "blur(0px)" }}
