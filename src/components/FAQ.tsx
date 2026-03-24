@@ -3,18 +3,30 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
-import faqsData from "@/content/faqs.json";
 
-export default function FAQ() {
+interface FAQItem {
+    question: string;
+    answer: string;
+}
+
+interface FAQProps {
+    faqs?: FAQItem[];
+}
+
+export default function FAQ({ faqs }: FAQProps) {
     const [openIndex, setOpenIndex] = useState<number | null>(null);
 
     const toggleItem = (index: number) => {
         setOpenIndex(openIndex === index ? null : index);
     };
 
+    if (!faqs || faqs.length === 0) {
+        return null;
+    }
+
     return (
         <div className="w-full max-w-3xl mx-auto space-y-4">
-            {faqsData.map((faq: { question: string; answer: string }, index: number) => {
+            {faqs.map((faq: FAQItem, index: number) => {
                 const isOpen = openIndex === index;
 
                 return (
@@ -45,7 +57,7 @@ export default function FAQ() {
                                     transition={{ type: "spring", stiffness: 300, damping: 30 }}
                                     className="overflow-hidden"
                                 >
-                                    <div className="pb-8 text-foreground/70 leading-relaxed font-medium max-w-2xl">
+                                    <div className="pb-8 text-foreground/70 leading-relaxed font-medium max-w-2xl whitespace-pre-line">
                                         {faq.answer}
                                     </div>
                                 </motion.section>

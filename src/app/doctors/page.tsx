@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import DoctorCard from "@/components/DoctorCard";
-import doctorsData from "@/content/doctors.json";
+import { getAllDoctors } from "@/lib/queries";
 import { LayoutContainer } from "@/components/layout-container";
 
 export const metadata: Metadata = {
@@ -8,8 +8,8 @@ export const metadata: Metadata = {
     description: "Meet our team of board-certified ophthalmologists and eye care specialists.",
 };
 
-export default function DoctorsPage() {
-    const doctors = doctorsData;
+export default async function DoctorsPage() {
+    const doctors = await getAllDoctors();
 
     return (
         <div className="py-16 md:py-32">
@@ -22,7 +22,7 @@ export default function DoctorsPage() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-border border border-border">
-                    {doctors.map((doctor, i) => (
+                    {doctors.map((doctor: { slug: string; name: string; title: string; role: string; image?: string; credentials: string[] }, i: number) => (
                         <div key={doctor.slug} className="bg-background">
                             <DoctorCard {...doctor} index={i + 1} />
                         </div>

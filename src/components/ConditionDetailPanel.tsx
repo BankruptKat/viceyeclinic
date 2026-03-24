@@ -36,15 +36,17 @@ export default function ConditionDetailPanel({ condition, isOpen, onClose }: Con
             if (e.key === "Escape") onClose();
         };
 
+        const previousOverflow = document.body.style.overflow;
+
         if (isOpen) {
             document.body.style.overflow = "hidden";
             window.addEventListener("keydown", handleEscape);
         } else {
-            document.body.style.overflow = "unset";
+            document.body.style.overflow = previousOverflow;
         }
 
         return () => {
-            document.body.style.overflow = "unset";
+            document.body.style.overflow = previousOverflow;
             window.removeEventListener("keydown", handleEscape);
         };
     }, [isOpen, onClose]);
@@ -70,7 +72,7 @@ export default function ConditionDetailPanel({ condition, isOpen, onClose }: Con
                         animate={{ x: 0, y: 0 }}
                         exit={isMobile ? { y: "100%" } : { x: "100%" }}
                         transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-                        className="fixed inset-x-0 bottom-0 h-[85vh] md:h-full md:inset-x-auto md:inset-y-0 md:right-0 z-[70] w-full md:max-w-2xl bg-surface border-t md:border-t-0 md:border-l border-border overflow-y-auto"
+                        className="fixed inset-x-0 bottom-0 z-[70] flex h-[85vh] w-full flex-col overflow-hidden border-t border-border bg-surface md:inset-x-auto md:inset-y-0 md:right-0 md:h-full md:max-w-2xl md:border-l md:border-t-0"
                         role="dialog"
                         aria-modal="true"
                         aria-labelledby={`panel-title-${condition.slug}`}
@@ -90,7 +92,12 @@ export default function ConditionDetailPanel({ condition, isOpen, onClose }: Con
                         </div>
 
                         {/* Content */}
-                        <div className="p-6 sm:p-8 lg:p-12 pb-24">
+                        <div
+                            className="flex-1 overflow-y-auto overscroll-contain touch-pan-y p-6 pb-24 sm:p-8 lg:p-12"
+                            data-lenis-prevent
+                            data-lenis-prevent-wheel
+                            data-lenis-prevent-touch
+                        >
                             <div className="mb-12 md:mb-16">
                                 <span className="font-mono text-xs tracking-widest text-foreground/40 uppercase block mb-4 md:mb-6">
                                     [ Overview ]

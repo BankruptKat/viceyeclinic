@@ -1,18 +1,26 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
+import { urlFor } from "@/lib/sanity";
 
 interface DoctorCardProps {
     slug: string;
     name: string;
     title: string;
     role: string;
-    image?: string;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    image?: any;
     credentials: string[];
     index?: number;
 }
 
 export default function DoctorCard({ slug, name, title, role, image, credentials, index }: DoctorCardProps) {
+    // Resolve image: Sanity object → URL string, or keep static string
+    const imageSrc = image
+        ? typeof image === 'string'
+            ? image
+            : image?.asset ? urlFor(image).width(576).height(768).url() : null
+        : null;
     return (
         <Link
             href={`/doctors/${slug}`}
@@ -31,9 +39,9 @@ export default function DoctorCard({ slug, name, title, role, image, credentials
 
             {/* Editorial Portrait */}
             <div className="w-48 sm:w-64 lg:w-72 aspect-[3/4] mx-auto bg-border relative overflow-hidden mb-10 group-hover:grayscale-0 grayscale transition-all duration-700 ease-[0.16,1,0.3,1]">
-                {image ? (
+                {imageSrc ? (
                     <Image
-                        src={image}
+                        src={imageSrc}
                         alt={`Portrait of ${name}`}
                         fill
                         className="object-cover object-center"

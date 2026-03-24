@@ -1,8 +1,23 @@
 import Link from "next/link";
-import siteData from "@/content/site.json";
 import { LayoutContainer } from "@/components/layout-container";
+import { getSiteSettings } from "@/lib/queries";
 
-export default function Footer() {
+export default async function Footer() {
+    const site = await getSiteSettings();
+
+    // Fallback values in case Sanity hasn't been seeded yet
+    const name = site?.name ?? "Victoria Eye Care";
+    const address = {
+        street: site?.addressStreet ?? "1581 Hillside Avenue",
+        city: site?.addressCity ?? "Victoria",
+        province: site?.addressProvince ?? "BC",
+        postalCode: site?.addressPostalCode ?? "V8T 2C1",
+    };
+    const phone = site?.phone ?? "250.382.3937";
+    const officeHours = {
+        weekdays: site?.officeHoursWeekdays ?? "Monday – Thursday: 8:00 AM – 4:30 PM",
+        friday: site?.officeHoursFriday ?? "Friday: 8:00 AM – 12:00 PM (or by appointment)",
+    };
     const currentYear = new Date().getFullYear();
 
     return (
@@ -11,11 +26,11 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-16">
                     {/* Brand & Address */}
                     <div className="space-y-6">
-                        <h3 className="text-2xl font-serif font-semibold tracking-tight">{siteData.name}.</h3>
+                        <h3 className="text-2xl font-serif font-semibold tracking-tight">{name}.</h3>
                         <div className="text-foreground/80 text-sm space-y-2 font-medium">
-                            <p>{siteData.address.street}</p>
-                            <p>{`${siteData.address.city}, ${siteData.address.province} ${siteData.address.postalCode}`}</p>
-                            <p className="pt-4 text-foreground">{siteData.phone}</p>
+                            <p>{address.street}</p>
+                            <p>{`${address.city}, ${address.province} ${address.postalCode}`}</p>
+                            <p className="pt-4 text-foreground">{phone}</p>
                         </div>
                     </div>
 
@@ -41,15 +56,15 @@ export default function Footer() {
                     <div className="space-y-4">
                         <h4 className="font-semibold text-sm tracking-wide uppercase text-foreground/50">Hours</h4>
                         <ul className="flex flex-col gap-2 text-sm text-foreground/70">
-                            <li className="flex justify-between"><span>Mon-Thu</span><span>{siteData.officeHours.weekdays.replace("Monday – Thursday: ", "")}</span></li>
-                            <li className="flex justify-between"><span>Friday</span><span>{siteData.officeHours.friday.replace("Friday: ", "")}</span></li>
+                            <li className="flex justify-between"><span>Mon-Thu</span><span>{officeHours.weekdays.replace("Monday – Thursday: ", "")}</span></li>
+                            <li className="flex justify-between"><span>Friday</span><span>{officeHours.friday.replace("Friday: ", "")}</span></li>
                             <li className="flex justify-between"><span>Holidays</span><span>Closed</span></li>
                         </ul>
                     </div>
                 </div>
 
                 <div className="border-t border-border mt-24 pt-8 flex flex-col md:flex-row justify-between items-center gap-6 text-xs text-foreground/60 font-medium tracking-wide">
-                    <p>&copy; {currentYear} {siteData.name}. All rights reserved.</p>
+                    <p>&copy; {currentYear} {name}. All rights reserved.</p>
                     <div className="flex gap-8">
                         <Link href="#" className="hover:text-foreground transition-colors uppercase">Privacy</Link>
                         <Link href="#" className="hover:text-foreground transition-colors uppercase">Terms</Link>

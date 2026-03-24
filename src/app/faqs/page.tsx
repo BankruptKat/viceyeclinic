@@ -1,13 +1,16 @@
 import { Metadata } from 'next';
 import FAQ from '@/components/FAQ';
 import { LayoutContainer } from "@/components/layout-container";
+import { getAllFaqs } from '@/lib/queries';
 
 export const metadata: Metadata = {
     title: 'Frequently Asked Questions | Victoria Eye Care',
     description: 'Find answers to common questions about appointments, insurance, and eye care procedures.',
 };
 
-export default function FAQPage() {
+export default async function FAQPage() {
+    const faqs = await getAllFaqs();
+
     return (
         <div className="py-16 md:py-32">
             <LayoutContainer>
@@ -19,7 +22,7 @@ export default function FAQPage() {
                 </div>
 
                 <div className="max-w-4xl mx-auto">
-                    <FAQ />
+                    <FAQ faqs={faqs} />
                 </div>
             </LayoutContainer>
         </div>

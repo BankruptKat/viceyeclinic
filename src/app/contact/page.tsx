@@ -2,14 +2,26 @@ import { Metadata } from 'next';
 import ContactForm from '@/components/ContactForm';
 import { LayoutContainer } from "@/components/layout-container";
 import { Mail, MapPin, Phone } from 'lucide-react';
-import siteData from '@/content/site.json';
+import { getSiteSettings } from '@/lib/queries';
 
 export const metadata: Metadata = {
     title: 'Contact Us | Victoria Eye Care',
     description: 'Get in touch with Victoria Eye Care to book an appointment or ask a question.',
 };
 
-export default function ContactPage() {
+export default async function ContactPage() {
+    const site = await getSiteSettings();
+
+    // Fallback values in case Sanity hasn't been seeded yet
+    const address = {
+        street: site?.addressStreet ?? '1581 Hillside Avenue',
+        city: site?.addressCity ?? 'Victoria',
+        province: site?.addressProvince ?? 'BC',
+        postalCode: site?.addressPostalCode ?? 'V8T 2C1',
+    };
+    const phone = site?.phone ?? '250.382.3937';
+    const officeHoursWeekdays = site?.officeHoursWeekdays ?? 'Monday – Thursday: 8:00 AM – 4:30 PM';
+
     return (
         <div className="py-16 md:py-32">
             <LayoutContainer>
@@ -31,8 +43,8 @@ export default function ContactPage() {
                             <div>
                                 <h3 className="text-xl font-semibold mb-2">Visit our Clinic</h3>
                                 <p className="text-foreground/70 leading-relaxed font-medium">
-                                    {siteData.address.street}<br />
-                                    {siteData.address.city}, {siteData.address.province} {siteData.address.postalCode}
+                                    {address.street}<br />
+                                    {address.city}, {address.province} {address.postalCode}
                                 </p>
                             </div>
                         </div>
@@ -44,10 +56,10 @@ export default function ContactPage() {
                             <div>
                                 <h3 className="text-xl font-semibold mb-2">Call Us</h3>
                                 <p className="text-foreground/70 leading-relaxed font-medium mb-4">
-                                    Available {siteData.officeHours.weekdays}
+                                    Available {officeHoursWeekdays}
                                 </p>
-                                <a href={`tel:${siteData.phone.replace(/\D/g, '')}`} className="text-2xl font-bold text-accent hover:opacity-80 transition-opacity">
-                                    {siteData.phone}
+                                <a href={`tel:${phone.replace(/\D/g, '')}`} className="text-2xl font-bold text-accent hover:opacity-80 transition-opacity">
+                                    {phone}
                                 </a>
                             </div>
                         </div>

@@ -1,16 +1,15 @@
 import { Metadata } from "next";
 import { ConditionCard } from "@/components/ConditionCard";
-import conditionsData from "@/content/conditions.json";
+import { getAllConditions } from "@/lib/queries";
+import { LayoutContainer } from "@/components/layout-container";
 
 export const metadata: Metadata = {
     title: "Eye Conditions | Victoria Eye Care",
     description: "Learn about the common eye conditions we treat, including cataracts, glaucoma, and macular degeneration.",
 };
 
-import { LayoutContainer } from "@/components/layout-container";
-
-export default function ConditionsPage() {
-    const conditions = conditionsData;
+export default async function ConditionsPage() {
+    const conditions = await getAllConditions();
 
     return (
         <div className="py-16 md:py-32">
@@ -23,7 +22,7 @@ export default function ConditionsPage() {
                 </div>
 
                 <div className="border-t border-border">
-                    {conditions.map((condition, i) => (
+                    {conditions.map((condition: { slug: string; title: string; shortDescription: string; icon: string; sections: { heading: string; content: string }[] }, i: number) => (
                         <ConditionCard key={condition.slug} condition={condition} index={i + 1} />
                     ))}
                 </div>
